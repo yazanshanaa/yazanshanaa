@@ -115,6 +115,18 @@ const languages = [...bytes.entries()]
   .sort((a, b) => b[1] - a[1]).slice(0, 7)
   .map(([name, size]) => ({ name, color: colors.get(name), pct: +(size / totalBytes * 100).toFixed(1) }));
 
+// contributions grouped into the last 12 calendar months
+function monthly(list) {
+  const buckets = new Map();
+  for (const d of list) {
+    const key = d.date.slice(0, 7);
+    buckets.set(key, (buckets.get(key) ?? 0) + d.count);
+  }
+  const names = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  return [...buckets.entries()].sort((a, b) => a[0].localeCompare(b[0])).slice(-12)
+    .map(([key, count]) => ({ key, label: names[Number(key.slice(5, 7)) - 1], count }));
+}
+
 const data = {
   generated: new Date().toISOString().slice(0, 10),
   source,
@@ -129,6 +141,7 @@ const data = {
   longestStreak: longest,
   activeDays: days.filter(d => d.count > 0).length,
   busiestDay: days.reduce((m, d) => Math.max(m, d.count), 0),
+  months: monthly(days),
   languages,
 };
 writeFileSync(new URL("./data.json", import.meta.url), JSON.stringify(data, null, 2));
