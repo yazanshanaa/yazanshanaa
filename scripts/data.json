@@ -1,0 +1,36 @@
+{
+  "generated": "2026-11-10",
+  "contributions": 87,
+  "privateContributions": 0,
+  "commits": 76,
+  "pullRequests": 2,
+  "issues": 0,
+  "repositories": 10,
+  "followers": 0,
+  "stars": 0,
+  "currentStreak": 3,
+  "longestStreak": 5,
+  "activeDays": 27,
+  "languages": [
+    {
+      "name": "HTML",
+      "color": "#e34c26",
+      "pct": 60.3
+    },
+    {
+      "name": "JavaScript",
+      "color": "#f1e05a",
+      "pct": 30.2
+    },
+    {
+      "name": "CSS",
+      "color": "#663399",
+      "pct": 6.1
+    },
+    {
+      "name": "C#",
+      "color": "#7355dd",
+      "pct": 3.5
+    }
+  ]
+}
