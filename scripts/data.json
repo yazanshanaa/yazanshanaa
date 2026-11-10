@@ -1,8 +1,8 @@
 {
   "generated": "2026-11-10",
-  "source": "graphql (public)",
-  "contributions": 1093,
-  "commits": 78,
+  "source": "public contribution graph",
+  "contributions": 593,
+  "commits": 79,
   "pullRequests": 2,
   "issues": 0,
   "repositories": 10,
@@ -11,11 +11,12 @@
   "currentStreak": 4,
   "longestStreak": 16,
   "activeDays": 120,
+  "busiestDay": 29,
   "languages": [
     {
       "name": "HTML",
       "color": "#e34c26",
-      "pct": 59.9
+      "pct": 59.8
     },
     {
       "name": "JavaScript",
