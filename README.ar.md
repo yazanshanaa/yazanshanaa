@@ -151,22 +151,21 @@ Compose، و PostgreSQL — مبني على قيد مزدوج صحيح بدل أ
 
 </div>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api?username=yazanshanaa&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&locale=ar&bg_color=0A1119&title_color=7DD3FC&text_color=A8C0D0&icon_color=5EEAD4&ring_color=2DD4BF&card_width=420">
-    <img height="170" alt="إحصائيات GitHub" src="https://github-readme-stats.vercel.app/api?username=yazanshanaa&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&locale=ar&bg_color=F4F8FA&title_color=0E7490&text_color=46637A&icon_color=0D9488&ring_color=0D9488&card_width=420">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=yazanshanaa&layout=compact&hide_border=true&langs_count=8&locale=ar&bg_color=0A1119&title_color=7DD3FC&text_color=A8C0D0&card_width=330">
-    <img height="170" alt="أكثر اللغات استخداماً" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yazanshanaa&layout=compact&hide_border=true&langs_count=8&locale=ar&bg_color=F4F8FA&title_color=0E7490&text_color=46637A&card_width=330">
-  </picture>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/github-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="assets/github-light.webp">
+  <img alt="إحصائيات GitHub — المساهمات والـ commits وطلبات الدمج والمستودعات والسلاسل واللغات" src="assets/github-dark.webp" width="100%">
+</picture>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/yazanshanaa/yazanshanaa/output/snake-dark.svg">
-    <img alt="رسم المساهمات" src="https://raw.githubusercontent.com/yazanshanaa/yazanshanaa/output/snake.svg" width="100%">
-  </picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/yazanshanaa/yazanshanaa/output/snake-dark.svg">
+  <img alt="رسم المساهمات" src="https://raw.githubusercontent.com/yazanshanaa/yazanshanaa/output/snake.svg" width="100%">
+</picture>
+
+<div dir="rtl" align="right">
+
+<sub>الرسمان يتولّدان يومياً عبر GitHub Action داخل هذا المستودع — بلا خدمة إحصائيات خارجية، فلا شيء يتعطّل.</sub>
+
 </div>
 
 <br>

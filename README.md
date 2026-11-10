@@ -141,30 +141,18 @@ for businesses that live on WhatsApp.
 
 ## GitHub
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api?username=yazanshanaa&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=0A1119&title_color=7DD3FC&text_color=A8C0D0&icon_color=5EEAD4&ring_color=2DD4BF&card_width=420">
-    <img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=yazanshanaa&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&bg_color=F4F8FA&title_color=0E7490&text_color=46637A&icon_color=0D9488&ring_color=0D9488&card_width=420">
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=yazanshanaa&layout=compact&hide_border=true&langs_count=8&bg_color=0A1119&title_color=7DD3FC&text_color=A8C0D0&card_width=330">
-    <img height="170" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yazanshanaa&layout=compact&hide_border=true&langs_count=8&bg_color=F4F8FA&title_color=0E7490&text_color=46637A&card_width=330">
-  </picture>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/github-dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="assets/github-light.webp">
+  <img alt="GitHub stats — contributions, commits, pull requests, repositories, streaks and languages by bytes" src="assets/github-dark.webp" width="100%">
+</picture>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-streak-stats.herokuapp.com?user=yazanshanaa&hide_border=true&background=0A1119&stroke=16323F&ring=2DD4BF&fire=5EEAD4&currStreakLabel=7DD3FC&sideLabels=A8C0D0&dates=5C7C90&currStreakNum=E6EEF5&sideNums=E6EEF5">
-    <img height="170" alt="Contribution streak" src="https://github-readme-streak-stats.herokuapp.com?user=yazanshanaa&hide_border=true&background=F4F8FA&stroke=D3E1E9&ring=0D9488&fire=0E7490&currStreakLabel=0E7490&sideLabels=46637A&dates=8CA3B3&currStreakNum=16323F&sideNums=16323F">
-  </picture>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/yazanshanaa/yazanshanaa/output/snake-dark.svg">
+  <img alt="Contribution graph" src="https://raw.githubusercontent.com/yazanshanaa/yazanshanaa/output/snake.svg" width="100%">
+</picture>
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/yazanshanaa/yazanshanaa/output/snake-dark.svg">
-    <img alt="Contribution graph" src="https://raw.githubusercontent.com/yazanshanaa/yazanshanaa/output/snake.svg" width="100%">
-  </picture>
-</div>
+<sub>Both graphics are regenerated daily by a GitHub Action in this repository — no third-party stats service, nothing to go down.</sub>
 
 <br>
 
