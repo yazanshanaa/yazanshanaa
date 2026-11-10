@@ -1,8 +1,8 @@
 {
   "generated": "2026-11-10",
   "source": "public contribution graph",
-  "contributions": 593,
-  "commits": 79,
+  "contributions": 594,
+  "commits": 80,
   "pullRequests": 2,
   "issues": 0,
   "repositories": 10,
@@ -12,16 +12,78 @@
   "longestStreak": 16,
   "activeDays": 120,
   "busiestDay": 29,
+  "months": [
+    {
+      "key": "2025-12",
+      "label": "Dec",
+      "count": 23
+    },
+    {
+      "key": "2026-01",
+      "label": "Jan",
+      "count": 11
+    },
+    {
+      "key": "2026-02",
+      "label": "Feb",
+      "count": 2
+    },
+    {
+      "key": "2026-03",
+      "label": "Mar",
+      "count": 27
+    },
+    {
+      "key": "2026-04",
+      "label": "Apr",
+      "count": 128
+    },
+    {
+      "key": "2026-05",
+      "label": "May",
+      "count": 29
+    },
+    {
+      "key": "2026-06",
+      "label": "Jun",
+      "count": 25
+    },
+    {
+      "key": "2026-07",
+      "label": "Jul",
+      "count": 35
+    },
+    {
+      "key": "2026-08",
+      "label": "Aug",
+      "count": 46
+    },
+    {
+      "key": "2026-09",
+      "label": "Sep",
+      "count": 101
+    },
+    {
+      "key": "2026-10",
+      "label": "Oct",
+      "count": 109
+    },
+    {
+      "key": "2026-11",
+      "label": "Nov",
+      "count": 54
+    }
+  ],
   "languages": [
     {
       "name": "HTML",
       "color": "#e34c26",
-      "pct": 59.8
+      "pct": 59.7
     },
     {
       "name": "JavaScript",
       "color": "#f1e05a",
-      "pct": 30.6
+      "pct": 30.8
     },
     {
       "name": "CSS",
