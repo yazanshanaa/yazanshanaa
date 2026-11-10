@@ -1,0 +1,11 @@
+{
+  "name": "profile-stats",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@fontsource/inter": "5.1.0",
+    "@fontsource/jetbrains-mono": "5.1.1",
+    "playwright": "1.49.1",
+    "sharp": "0.33.5"
+  }
+}
