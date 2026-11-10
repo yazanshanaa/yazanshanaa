@@ -1,0 +1,50 @@
+name: Generate GitHub stats card
+
+on:
+  schedule:
+    - cron: "41 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/stats.yml"]
+
+concurrency:
+  group: stats
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: scripts
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
+      - name: Fetch stats
+        working-directory: scripts
+        env:
+          LOGIN: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node fetch-stats.mjs
+
+      - name: Render cards
+        working-directory: scripts
+        run: node render-card.mjs
+
+      - name: Commit regenerated cards
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-dark.webp assets/github-light.webp scripts/data.json
+          git diff --staged --quiet || git commit -m "chore: refresh GitHub stats card [skip ci]"
+          git push
