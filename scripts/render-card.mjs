@@ -24,11 +24,11 @@ const faces = [
 const n = (v) => v.toLocaleString("en-US");
 const stats = [
   ["Contributions", n(d.contributions), "last 12 months"],
-  ["Commits", n(d.commits), "this year"],
-  ["Pull requests", n(d.pullRequests), "opened"],
-  ["Repositories", n(d.repositories), "owned, not forked"],
+  ["Active days", n(d.activeDays), "of the last 365"],
+  ["Busiest day", n(d.busiestDay), "contributions"],
   ["Current streak", n(d.currentStreak), "days"],
   ["Longest streak", n(d.longestStreak), "days"],
+  ["Public repos", n(d.repositories), "owned, not forked"],
 ];
 
 const page = (t) => `<!doctype html><meta charset="utf-8"><style>

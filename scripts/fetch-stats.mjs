@@ -79,7 +79,7 @@ const c = u.contributionsCollection;
 /* ---------- merge ---------- */
 let days = (c.contributionCalendar.weeks ?? []).flatMap(w => w.contributionDays)
   .map(d => ({ date: d.date, count: d.contributionCount }));
-let total = c.contributionCalendar.totalContributions + (c.restrictedContributionsCount || 0);
+let total = c.contributionCalendar.totalContributions;
 let source = scoped ? "graphql (scoped token)" : "graphql (public)";
 
 try {
@@ -128,6 +128,7 @@ const data = {
   currentStreak: current,
   longestStreak: longest,
   activeDays: days.filter(d => d.count > 0).length,
+  busiestDay: days.reduce((m, d) => Math.max(m, d.count), 0),
   languages,
 };
 writeFileSync(new URL("./data.json", import.meta.url), JSON.stringify(data, null, 2));
